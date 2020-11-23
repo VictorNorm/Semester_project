@@ -1,0 +1,167 @@
+@font-face {
+    font-family: Archivo;
+    src: url(https://fonts.google.com/specimen/Archivo?query=archiv);
+}
+
+/* Global styles ---------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Archivo, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 22px;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 26px;
+}
+
+h1, h2, h3 {
+    color: var(--white);
+    font-weight: 600;
+}
+
+p {
+    color: var(--white);
+}
+
+.cta-1 {
+    display: block;
+    background-color: var(--orange);
+    padding: 10px;
+    width: 250px;
+    height: 50px;
+    text-align: center;
+    border-radius: 25px;
+    text-decoration: none;
+    color: black;
+}
+
+/* CSS Variables ---------------------------------------------- */
+
+:root {
+    --black-blue: #151B26;
+    --white: #FFF;
+    --dark-blue: #232A40;
+    --light-blue: #0B6AA5;
+    --grey: #E4E4E4;
+    --orange: #FF8C1A;
+}
+
+
+/* Global styles ---------------------------------------------- */
+
+#logo {
+    max-width: 100px;
+    display: block;
+}
+
+
+body {
+    background-image: url(images/pexels-juan-733475.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100% 80vh;
+}
+
+.add-picture-type-1 {
+    max-width: 325px;
+    display: block;
+}
+
+/* Header ---------------------------------------------- */
+
+header {
+    display: flex;
+    border-bottom: 1px solid var(--white);
+    max-width: 1500px;
+    margin: 0 auto;
+    text-align: right;
+}
+
+
+
+/* Nav  ---------------------------------------------- */
+
+nav {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+
+nav li {
+    display: inline-block;
+    margin: 10px;
+    color: var(--white);
+}
+
+
+/* Main  ---------------------------------------------- */
+
+main {
+    margin: 20px auto;
+    border: 1px solid black;
+    max-width: 1500px;
+    min-height: 60vh;
+}
+
+.content-wrapper-1 {
+    padding: 20px;
+    max-width: 900px;
+    margin: 20% 0px;
+}
+
+section h1, h2 {
+    margin: 15px 0px;
+}
+
+.content-wrapper-2 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.content-wrapper-2-box-2 {
+    display: flex;
+    box-shadow: 0 0 20px 15px rgba(0, 0, 0, 0.3);
+    
+}
+
+.content-wrapper-2-box-1, .content-wrapper-2-box-2 {
+    max-width: 650px;
+    margin: 20px;
+}
+
+.content-wrapper-2-box-2-box-1 {
+    background-color: var(--white);
+    max-width: 300px;
+    padding: 15px;
+
+}
+
+.content-wrapper-2-box-2-box-1 p {
+    color: black;
+    margin: 15px 0px;
+}
+
+
+
