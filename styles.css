@@ -50,6 +50,7 @@ p {
     color: black;
 }
 
+
 /* CSS Variables ---------------------------------------------- */
 
 :root {
@@ -65,40 +66,54 @@ p {
 /* Global styles ---------------------------------------------- */
 
 #logo {
-    max-width: 100px;
+    max-height: 100px;
     display: block;
 }
 
 
-body {
-    background-image: url(images/pexels-juan-733475.jpg);
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: 100% 80vh;
-}
-
 .add-picture-type-1 {
-    max-width: 325px;
+    max-width: 100%;
     display: block;
 }
 
 /* Header ---------------------------------------------- */
 
 header {
+    min-height: 80vh;
+    margin: 0 auto;
+    background-image: url(images/pexels-juan-733475.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.page-wrapper-1 {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.content-wrapper-1 {
     display: flex;
-    border-bottom: 1px solid var(--white);
+    flex-direction: column;
+}
+
+.content-wrapper-1 {
+    padding: 20px 0px;
+    max-width: 900px;
+    margin: 18% 0px;
+}
+
+/* Nav  ---------------------------------------------- */
+
+.navbar {
+    display: flex;
+    max-height: 100px;
+    border: 1px solid white;
     max-width: 1500px;
     margin: 0 auto;
     text-align: right;
 }
 
-
-
-/* Nav  ---------------------------------------------- */
-
 nav {
-    margin-left: auto;
-    display: flex;
     align-items: center;
 }
 
@@ -107,6 +122,9 @@ nav a {
     color: var(--white);
 }
 
+nav ul {
+    flex: 1;
+}
 
 nav li {
     display: inline-block;
@@ -117,45 +135,34 @@ nav li {
 
 /* Main  ---------------------------------------------- */
 
-main {
-    margin: 20px auto;
-    border: 1px solid black;
-    max-width: 1500px;
-    min-height: 60vh;
-}
-
-.content-wrapper-1 {
-    padding: 20px;
-    max-width: 900px;
-    margin: 20% 0px;
-}
-
-section h1, h2 {
+section h1, section h2 {
     margin: 15px 0px;
+}
+
+.section-1 {
+    background-image: linear-gradient(to bottom right, #052E48, #0B6AA5);
 }
 
 .content-wrapper-2 {
     display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   
 }
 
 .content-wrapper-2-box-2 {
     display: flex;
     box-shadow: 0 0 20px 15px rgba(0, 0, 0, 0.3);
-    
 }
 
 .content-wrapper-2-box-1, .content-wrapper-2-box-2 {
     max-width: 650px;
-    margin: 20px;
 }
 
 .content-wrapper-2-box-2-box-1 {
     background-color: var(--white);
     max-width: 300px;
     padding: 15px;
-
 }
 
 .content-wrapper-2-box-2-box-1 p {
@@ -163,5 +170,8 @@ section h1, h2 {
     margin: 15px 0px;
 }
 
+/* Section-1  ---------------------------------------------- */
 
-
+.content-wrapper-2-box-1 p {
+    margin: 0px 0px 40px 0px;
+}
