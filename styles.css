@@ -938,7 +938,7 @@ section h3 {
        margin: 0 auto;
    }
 
-    label {
+    .label-hamburger {
         display: inline-block;
         align-self: center;
         position: absolute;
