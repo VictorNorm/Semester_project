@@ -228,7 +228,6 @@ nav li {
 
 #hamburger-menu {
     display: none;
-    
 }
 
 label {
@@ -238,7 +237,15 @@ label {
 
 .fa-bars {
     font-size: 26px;
-    
+}
+
+.h3-nav-hidden {
+    display: none;
+}
+
+.h3-nav,
+.h3-nav-hidden {
+    font-size: 27px;
 }
 
 /* Index  ---------------------------------------------- */
@@ -825,6 +832,16 @@ section h3 {
         max-width: 90%;
         margin: 0 auto;
     }
+
+    .h3-nav {
+        display: none;
+    }
+
+    .h3-nav-hidden {
+        display: block;
+        margin-left: 5px;
+    }
+
 }
 
 @media screen and (max-width: 700px) {
@@ -897,6 +914,28 @@ section h3 {
     .calendar-container {
         margin: 20px auto;
     }
+
+    .navbar ul {
+        display: none;
+    }
+
+    #hamburger-menu:checked ~ #nav {
+        display: block;
+    }
+
+   #nav li {
+       display: block;
+       text-align: center;
+       line-height: 24px;
+       margin: 0 auto;
+   }
+
+    .label-hamburger {
+        display: inline-block;
+        align-self: center;
+        position: absolute;
+        right: 30px;
+    }
 }
 
 
@@ -923,25 +962,4 @@ section h3 {
         background-size: contain;
     }
 
-    .navbar ul {
-        display: none;
-    }
-
-    #hamburger-menu:checked ~ #nav {
-        display: block;
-    }
-
-   #nav li {
-       display: block;
-       text-align: center;
-       line-height: 24px;
-       margin: 0 auto;
-   }
-
-    .label-hamburger {
-        display: inline-block;
-        align-self: center;
-        position: absolute;
-        right: 30px;
-    }
 }
