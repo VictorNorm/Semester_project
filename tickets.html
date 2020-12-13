@@ -5,139 +5,160 @@
     <script src="https://kit.fontawesome.com/ab5fd5efd4.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Community Science Museum displaying culture and science">
-    <title>Community Sciene Museum home</title>
+    <meta name="description" content="Community Science Museum's booking of tickets">
+    <title>Community Sciene Museum tickets</title>
 </head>
 <body class="tickets-body">
     <header>
-        <nav class="navbar">
-            <ul>
-                <li><a href="visit.html">Visit</a></li>
-                <li><a href="experiences.html">Experiences</a></li>
-                <li><a href="tickets.html">Tickets</a></li>
-                <li>Menu</li>
-            </ul>
-        </nav>
+        <div class="page-wrapper-1">
+            <nav class="navbar">
+                <a href="index.html"><img src="images/icon-1719742.svg" alt="logo" class="logo" id="logo"></a>
+                <label for="hamburger-menu" class="label"><i class="fas fa-bars"></i></label>
+                <input type="checkbox" id="hamburger-menu">
+                <ul id="nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="visit.html">Visit</a></li>
+                    <li><a href="experiences.html">Experiences</a></li>
+                    <li><a href="tickets.html" class="active">Tickets</a></li>
+                </ul>
+            </nav>
+        </div>
         <div class="tickets-header-background"></div>
     </header>
-<div class="page-wrapper-1">
-    <main class="tickets-main">
-        <section class="tickets-section">
-            <h1>Here you can book your free ticket for our re-opening.</h1>
-            <p>It is as aforementioned mandatory to book a ticket and schedule your visit to the museum. It is of utmost importance that you and all our visitors stay safe and healthy before, during, and after visiting the Community Science Museum. 
-            </p>
-            <p>Please use our calendar to schedule your visit.</p>
-            <p>We apologize for the inconvenience and hope that you understand that the only reason this is neccesseray is because your health is our top priority.</p>
-        </section>
-        <div class="calendar-container">
-            <div class="calendar">
-                <div class="calendar-top">
-                    <p class="month">December 2020</p>
-                    <i class="fas fa-arrow-left"></i>
-                    <i class="fas fa-arrow-right"></i>
+    <div class="page-wrapper-1">
+        <main class="tickets-main">
+            <section class="tickets-section">
+                <h1>Here you can book your free ticket for our re-opening.</h1>
+                <p>It is as aforementioned mandatory to book a ticket and schedule your visit to the museum. It is of
+                    utmost importance that you and all our visitors stay safe and healthy before, during, and after
+                    visiting the Community Science Museum.
+                </p>
+                <p>Please use our calendar to schedule your visit.</p>
+                <p>We apologize for the inconvenience and hope that you understand that the only reason this is
+                    neccesseray is because your health is our top priority.</p>
+            </section>
+            <div class="calendar-opening-times-container">
+                <div class="calendar-container">
+                    <div class="calendar">
+                        <div class="calendar-top">
+                            <p class="month">December 2020</p>
+                            <i class="fas fa-arrow-left"></i>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                        <div class="calendar-bot-container">
+                            <div class="calendar-col-1">
+                                <p class="day">Mo</p>
+                                <p class="day-faded">30</p>
+                                <p>7</p>
+                                <p>14</p>
+                                <p>21</p>
+                                <p>28</p>
+                                <p class="day-faded">4</p>
+                            </div>
+                            <div class="calendar-col-2">
+                                <p class="day">Tu</p>
+                                <p>1</p>
+                                <p>8</p>
+                                <p>15</p>
+                                <p>22</p>
+                                <p>29</p>
+                                <p class="day-faded">5</p>
+                            </div>
+                            <div class="calendar-col-3">
+                                <p class="day">We</p>
+                                <p>2</p>
+                                <p>9</p>
+                                <p>16</p>
+                                <p>23</p>
+                                <p>30</p>
+                                <p class="day-faded">6</p>
+                            </div>
+                            <div class="calendar-col-4">
+                                <p class="day">Th</p>
+                                <p>3</p>
+                                <p>10</p>
+                                <p>17</p>
+                                <p>24</p>
+                                <p>31</p>
+                                <p class="day-faded">7</p>
+                            </div>
+                            <div class="calendar-col-5">
+                                <p class="day">Fr</p>
+                                <p>4</p>
+                                <p>11</p>
+                                <p>18</p>
+                                <p>25</p>
+                                <p class="day-faded">1</p>
+                                <p class="day-faded">8</p>
+                            </div>
+                            <div class="calendar-col-6">
+                                <p class="day">Sa</p>
+                                <p>5</p>
+                                <p>12</p>
+                                <p>19</p>
+                                <p>26</p>
+                                <p class="day-faded">2</p>
+                                <p class="day-faded">9</p>
+                            </div>
+                            <div class="calendar-col-7">
+                                <p class="day">Su</p>
+                                <p>6</p>
+                                <p>13</p>
+                                <p>20</p>
+                                <p>27</p>
+                                <p class="day-faded">3</p>
+                                <p class="day-faded">10</p>
+                            </div>
+                        </div>
+                    </div>
+                    <form>
+                        <select name="time" id="time">
+                            <option value="10:00">10:00</option>
+                            <option value="11:00">11:00</option>
+                            <option value="12:00">12:00</option>
+                            <option value="13:00">13:00</option>
+                            <option value="14:00">14:00</option>
+                            <option value="15:00">15:00</option>
+                            <option value="16:00">16:00</option>
+                            <option value="17:00">17:00</option>
+                        </select>
+                    </form>
+                    <a href="" class="cta-1">Book</a>
                 </div>
-                <div class="calendar-bot-container">
-                    <div class="calendar-col-1">
-                        <p class="day">Mo</p>
-                        <p class="day-faded">30</p>
-                        <p>7</p>
-                        <p>14</p>
-                        <p>21</p>
-                        <p>28</p>
-                        <p class="day-faded">4</p>
-                    </div>
-                    <div class="calendar-col-2">
-                        <p class="day">Tu</p>
-                        <p>1</p>
-                        <p>8</p>
-                        <p>15</p>
-                        <p>22</p>
-                        <p>29</p>
-                        <p class="day-faded">5</p>
-                    </div>
-                    <div class="calendar-col-3">
-                        <p class="day">We</p>
-                        <p>2</p>
-                        <p>9</p>
-                        <p>16</p>
-                        <p>23</p>
-                        <p>30</p>
-                        <p class="day-faded">6</p>
-                    </div>
-                    <div class="calendar-col-4">
-                        <p class="day">Th</p>
-                        <p>3</p>
-                        <p>10</p>
-                        <p>17</p>
-                        <p>24</p>
-                        <p>31</p>
-                        <p class="day-faded">7</p>
-                    </div>
-                    <div class="calendar-col-5">
-                        <p class="day">Fr</p>
-                        <p>4</p>
-                        <p>11</p>
-                        <p>18</p>
-                        <p>25</p>
-                        <p class="day-faded">1</p>
-                        <p class="day-faded">8</p>
-                    </div>
-                    <div class="calendar-col-6">
-                        <p class="day">Sa</p>
-                        <p>5</p>
-                        <p>12</p>
-                        <p>19</p>
-                        <p>26</p>
-                        <p class="day-faded">2</p>
-                        <p class="day-faded">9</p>
-                    </div>
-                    <div class="calendar-col-7">
-                        <p class="day">Su</p>
-                        <p>6</p>
-                        <p>13</p>
-                        <p>20</p>
-                        <p>27</p>
-                        <p class="day-faded">3</p>
-                        <p class="day-faded">10</p>
-                    </div>
-                </div>
+                <ul class="opening-times-ul">
+                    <li>Opening times</li>
+                    <li>Monday 10:00-18:00</li>
+                    <li>Tuesday 10:00-18:00</li>
+                    <li>Wednesday 10:00-20:00</li>
+                    <li>Thursday 12:00-20:00</li>
+                    <li>Friday 10:00-18:00</li>
+                    <li>Saturday 10:00-16:00</li>
+                    <li>Sunday: Closed</li>
+                </ul>
             </div>
-            <form>
-                <select name="time" id="time">
-                    <option value="10:00">10:00</option>
-                    <option value="11:00">11:00</option>
-                    <option value="12:00">12:00</option>
-                    <option value="13:00">13:00</option>
-                    <option value="14:00">14:00</option>
-                    <option value="15:00">15:00</option>
-                    <option value="16:00">16:00</option>
-                    <option value="17:00">17:00</option>
-                </select>
-            </form>
-            <a href="" class="cta-1">Book</a>
-        </div>
-    </main>
-    <footer>
-        <div class="flex-container-3">
-            <ul>
-                <li>About us</li>
-                <li>Location</li>
-                <li>Opening times</li>
-            </ul>
-            <ul>
-                <li>Contact us</li>
-                <li>Covid-19 related</li>
-                <li>Jobs</li>
-                <li>Hire venue</li>
-            </ul>
-            <ul>
-                <li>Follow us</li>
-                <li><i class="fab fa-facebook-f"></i></li>
-                <li><i class="fab fa-instagram"></i></li>
-                <li><i class="fab fa-twitter"></i></li>
-            </ul>
-        </div>
-    </footer>
-</div>
+        </main>
+        <footer>
+            <div class="flex-container-3">
+                <ul>
+                    <li>About us</li>
+                    <li>Location</li>
+                    <li>Opening times</li>
+                </ul>
+                <ul>
+                    <li>Contact us</li>
+                    <li>Covid-19 related</li>
+                    <li>Jobs</li>
+                    <li>Hire venue</li>
+                </ul>
+                <ul>
+                    <li>Follow us</li>
+                    <li><i class="fab fa-facebook-f"></i></li>
+                    <li><i class="fab fa-instagram"></i></li>
+                    <li><i class="fab fa-twitter"></i></li>
+                </ul>
+                <a href="#top"><img src="images/icon-1719742.svg" alt="logo" class="logo logo-footer"></a>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>

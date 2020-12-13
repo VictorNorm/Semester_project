@@ -92,14 +92,14 @@ p {
     background-image: linear-gradient(to bottom right, var(--black-blue), var(--dark-blue));
 }
 
-#logo.img {
-    scale: 0.5;
-}
-
 a:visited,
 a:hover,
 a:focus {
     text-decoration: none;
+}
+
+.active {
+    text-decoration: underline;
 }
 
 /* CSS Variables ---------------------------------------------- */
@@ -116,10 +116,21 @@ a:focus {
 
 /* Global styles ---------------------------------------------- */
 
-#logo {
-    max-height: 100px;
+
+.logo {
+    height: 50px;
     display: block;
+    margin: 5px;
 }
+
+.fa-twitter,
+.fa-instagram,
+.fa-facebook-f {
+    display: inline-block;
+    margin: 10px 18px 0px 0px;
+    font-size: 24px;
+}
+
 
 
 .add-picture-type-1,
@@ -194,10 +205,11 @@ a:focus {
 .navbar {
     display: flex;
     max-height: 100px;
-    border: 1px solid white;
+    border-bottom: 1px solid white;
     max-width: 1500px;
     margin: 0 auto;
     text-align: right;
+    padding: 15px 0px;
 }
 
 nav {
@@ -217,6 +229,21 @@ nav li {
     display: inline-block;
     margin: 10px;
     color: var(--white);
+}
+
+#hamburger-menu {
+    display: none;
+    
+}
+
+label {
+    display: none;
+    color: white;
+}
+
+.fa-bars {
+    font-size: 26px;
+    
 }
 
 
@@ -354,9 +381,17 @@ section h2 {
 .add-big,
 .add-small {
     transition: transform 0.5s;
-
 }
 
+.section-2 .more {
+    color: white;
+    text-align: right;
+    font-style: italic;
+}
+
+.more:hover {
+    text-decoration: underline;
+}
 
 /* Visit  ---------------------------------------------- */
 
@@ -371,11 +406,12 @@ section h3 {
 
 .visit-main {
     display: flex;
-    justify-content: space-evenly;
+
 }
 
 .visit-flex-container-1 {
     display: flex;
+    margin: 0 auto;
 }
 
 .visit-flex-container p {
@@ -387,7 +423,7 @@ section h3 {
 }
 
 .visit-section p {
-   margin: 20px 0px;
+    margin: 20px 0px;
 }
 
 .visit-flex-container-1 {
@@ -448,7 +484,7 @@ section h3 {
 }
 
 .opening-times-container-box-1 p:nth-child(4n+2) {
-   margin-top: 25px;
+    margin-top: 25px;
 }
 
 .opening-times-picture {
@@ -479,6 +515,7 @@ section h3 {
     margin-top: 20px;
 }
 
+
 .experiences-top-picture {
     max-width: 48%;
     margin: 20px 20px 0px 20px;
@@ -488,7 +525,7 @@ section h3 {
 .experiences-flex-container-1 {
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     padding-bottom: 30px;
 }
 
@@ -512,7 +549,7 @@ section h3 {
 }
 
 .tickets-section {
-  max-width: 48%;
+    max-width: 48%;
 }
 
 .tickets-section p {
@@ -527,14 +564,15 @@ section h3 {
 }
 
 .calendar-container {
-    margin: 40px auto;
+    margin: 30px 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 
 .calendar {
-    min-width: 330px;
+    min-width: 320px;
     max-width: 400px;
     height: 300px;
     background-color: white;
@@ -567,11 +605,11 @@ section h3 {
     line-height: 33px;
 }
 
-.calendar-col-1, 
-.calendar-col-2, 
-.calendar-col-3, 
-.calendar-col-4, 
-.calendar-col-5, 
+.calendar-col-1,
+.calendar-col-2,
+.calendar-col-3,
+.calendar-col-4,
+.calendar-col-5,
 .calendar-col-6,
 .calendar-col-7 {
     display: flex;
@@ -588,7 +626,6 @@ section h3 {
     cursor: pointer;
 }
 
-
 .day,
 .month {
     font-weight: bold;
@@ -598,13 +635,30 @@ section h3 {
     opacity: 50%;
 }
 
-   
+.opening-times-ul {
+    list-style: none;
+    color: white;
+    line-height: 30px;
+    margin: 30px 15px;
+    max-width: 300px;
+}
+
+.opening-times-ul :nth-child(4n+1) {
+    margin-bottom: 20px;
+}
+
+.calendar-opening-times-container {
+    display: flex;
+    margin: 0 auto;
+}
+
+
 /* Footer  ---------------------------------------------- */
 
 .flex-container-3 {
     border-top: 1px solid white;
     max-width: 1500px;
-    margin: 0px auto;
+    margin: 0 auto;
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -689,6 +743,15 @@ section h3 {
         margin: 20px 0px;
     }
 
+    .tickets-main {
+        flex-direction: column;
+    }
+
+
+    .tickets-section {
+        max-width: 70%;
+        margin: 0 auto;
+
 }
 
 
@@ -746,14 +809,27 @@ section h3 {
         max-height: 130px;
     }
 
-    .tickets-main {
-        flex-direction: column;
-        
-    }
-
     .tickets-section {
         max-width: 90%;
         margin: 0 auto;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .experiences-p-hidden {
+        display: none;
+    }
+
+    .calendar-opening-times-container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .calendar-container {
+        margin-bottom: 0px;
     }
 
 }
@@ -775,7 +851,7 @@ section h3 {
 
     .content-wrapper-2-box-2-box-2 {
         background-image: url(images/pexels-photo-5063470.jpeg);
-        background-size: contain;
+        background-size: cover;
         min-width: 320px;
         min-height: 400px;
         text-align: center;
@@ -787,18 +863,27 @@ section h3 {
         font-size: 28px;
     }
 
-
     .visit-buttons .cta-1,
     .visit-buttons .cta-2 {
         margin-left: 5px;
         margin-right: 5px;
     }
-    
 
     .opening-times-container img {
         display: none;
     }
 
+    .experiences-top-picture {
+        display: none;
+    }
+
+    .experiences-section {
+        max-width: 80%;
+    }
+
+    .experiences-flex-container-1 {
+        margin-bottom: 0px;
+    }
 }
 
 
@@ -825,6 +910,26 @@ section h3 {
         background-size: contain;
     }
 
+    .navbar ul {
+        display: none;
+    }
+
+    #hamburger-menu:checked ~ #nav {
+        display: block;
+    }
+
+   #nav li {
+       display: block;
+       text-align: center;
+       line-height: 24px;
+       margin: 0 auto;
+   }
+
+    label {
+        display: inline-block;
+        align-self: center;
+        position: absolute;
+        right: 30px;
+    }
 
 }
-
