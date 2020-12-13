@@ -664,6 +664,27 @@ section h3 {
     margin: 0 auto;
 }
 
+.tickets-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.tickets-form label {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.tickets-form input {
+    height: 34px;
+    border-radius: 5px;
+    margin-top: 2px;
+}
+
+.tickets-form input {
+    text-align: center;
+}
+
 
 /* Footer  ---------------------------------------------- */
 
