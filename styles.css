@@ -1,7 +1,4 @@
-@font-face {
-    font-family: Archivo;
-    src: url(https://fonts.google.com/specimen/Archivo?query=archiv);
-}
+
 
 /* Global styles ---------------------------------------------- */
 
@@ -9,7 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Archivo, Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Archivo', sans-serif;
     font-size: clamp(16px, 1.7vw, 20px);
 }
 
@@ -136,8 +133,10 @@ a:focus {
 }
 
 .explore-picture {
-    height: 100%;
+    display: block;
+    /* height: 100%; */
     max-width: 300px;
+    /* object-fit: contain; */
 }
 
 .read-more {
@@ -264,6 +263,11 @@ section h2 {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+.content-wrapper-2-box-1,
+.content-wrapper-2-box-2 {
+    height: 450px;
 }
 
 .content-wrapper-2-box-2 {
@@ -860,7 +864,7 @@ section h3 {
     }
 
     .content-wrapper-2-box-2-box-2 {
-        background-image: url(images/pexels-photo-5063470.jpeg);
+        background-image: url("images/pexels-photo-5063470.jpeg");
         background-size: cover;
         min-width: 320px;
         min-height: 400px;
